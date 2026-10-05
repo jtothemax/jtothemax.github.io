@@ -27,67 +27,12 @@ a{color:var(--accent)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
 .wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
 h1,h2,h3{font-family:var(--display);line-height:1.1;margin:0}
+
 h2{font-size:1.75rem;font-weight:700;margin-bottom:1.5rem}
 section{padding:3rem 0;border-top:1px solid var(--line)}
 
-/* nav */
-nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:1px solid var(--line)}
-nav .wrap{display:flex;align-items:center;gap:1.25rem;height:3.25rem;overflow-x:auto}
-nav b{font-family:var(--display);font-size:1.1rem;margin-right:auto;white-space:nowrap}
-nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem;white-space:nowrap}
-nav a:hover{color:var(--ink)}
-#theme{background:none;border:1px solid var(--line);color:var(--ink);border-radius:999px;padding:.25rem .75rem;font:inherit;font-size:.85rem;cursor:pointer}
-
-/* hero: status board */
-.hero{padding:3.5rem 0 3rem}
-.status{display:inline-flex;align-items:center;gap:.6rem;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.35rem 1rem .35rem .75rem;font-weight:600;font-size:.95rem}
-.dot{width:.7rem;height:.7rem;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2.4s ease-out 1}
 @keyframes pulse{0%{box-shadow:0 0 0 0 var(--ok)}70%{box-shadow:0 0 0 12px transparent}100%{box-shadow:0 0 0 0 transparent}}
-h1{font-size:2rem;}
-.lede{max-width:38rem;font-size:1.1rem;color:var(--muted);margin:0 0 1.5rem}
-.btns{display:flex;flex-wrap:wrap;gap:.75rem}
-.btn{display:inline-block;padding:.7rem 1.25rem;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
-.btn.primary{background:var(--accent);color:var(--bg)}
-.btn.ghost{color:var(--accent)}
-.uptime{margin-top:2.5rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:1.1rem 1.25rem}
-.uptime header{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-weight:600;margin-bottom:.75rem}
-.uptime header span{color:var(--muted);font-weight:400}
-.bars{display:flex;gap:3px;height:2.25rem}
-.bars i{flex:1;border-radius:2px;background:var(--ok)}
-.bars i.w{background:var(--warn)}
-.bars-foot{display:flex;justify-content:space-between;color:var(--muted);font-size:.85rem;margin-top:.5rem}
-
-/* services (skills) */
-.services{display:grid;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:12px}
-.svc{display:grid;grid-template-columns:minmax(8rem,12rem) 1fr auto;gap:1rem;align-items:center;padding:.9rem 1.25rem;border-top:1px solid var(--line)}
-.svc:first-child{border-top:0}
-.svc b{font-weight:600}
-.meter{height:.6rem;background:var(--line);border-radius:99px;overflow:hidden}
-.meter i{display:block;height:100%;width:var(--w);background:var(--accent);border-radius:99px}
-.svc small{color:var(--muted);white-space:nowrap}
-.group{margin:1.5rem 0 .5rem;font-weight:600;color:var(--muted);font-size:.95rem}
-.group:first-of-type{margin-top:0}
-
-/* experience: incident-log timeline */
-.log{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:2px solid var(--line)}
-.log li{position:relative;padding:0 0 2.25rem 1rem}
-.log li::before{content:"";position:absolute;left:calc(-1.5rem - 7px);top:.4rem;width:12px;height:12px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
-.log li.now::before{background:var(--ok);border-color:var(--ok)}
-.when{color:var(--muted);font-size:.95rem;font-weight:500}
-.log h3{font-size:1.3rem;margin:.15rem 0 .1rem}
-.org{font-weight:500;margin:0 0 .6rem}
-.log ul{margin:0;padding-left:1.1rem;max-width:44rem}
-.log li li{padding:0;margin:.3rem 0}
-.log li li::before{display:none}
-.res{display:inline-block;margin-top:.5rem;font-size:.9rem;color:var(--ok);font-weight:600}
-
-/* certs + contact */
-.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem;padding:0;margin:0;list-style:none}
-.certs li{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:8px;padding:.9rem 1rem}
-.certs b{display:block}
-.certs span{color:var(--muted);font-size:.9rem}
-.contact p{max-width:36rem;color:var(--muted);font-size:1.15rem}
-footer{border-top:1px solid var(--line);padding:1.5rem 0 2rem;color:var(--muted);font-size:.9rem}
+h1{font-size:2.5rem;}
 
 @media (max-width:40rem){
   .svc{grid-template-columns:1fr auto}
@@ -101,7 +46,7 @@ footer{border-top:1px solid var(--line);padding:1.5rem 0 2rem;color:var(--muted)
       <p>This site is small but has much possibilty.</p>
       <p>Please see my linkedin for more info.</p>
       <a href="https://www.linkedin.com/in/joseph-mark-4325a695/">https://www.linkedin.com/in/joseph-mark-4325a695/</a>
-      <br>
+      </br>
   <h2>There is much more to come!</h2>
 </body>
 </html>
